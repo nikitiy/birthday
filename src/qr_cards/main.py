@@ -3,9 +3,9 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from sqladmin import Admin, ModelView
 
-from qr_cards.cards.models import CardModel
-from qr_cards.cards.views import router as card_router
-from qr_cards.database.core import async_engine
+from src.qr_cards.cards.models import CardModel
+from src.qr_cards.cards.views import router as card_router
+from src.qr_cards.database.core import async_engine
 
 load_dotenv()
 
